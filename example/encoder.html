@@ -157,7 +157,7 @@
           var link = document.createElement('a');
           link.href = url;
           link.download = fileName;
-          link.innerHTML = link.download;
+          link.innerHTML = link.download + ' size: ' + dataBlob.size / 1024 + 'kb';
 
           var li = document.createElement('li');
           li.appendChild(link);
